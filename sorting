@@ -1,0 +1,12 @@
+# simple sorting
+arr=[1,2,4,3,6,5,7]
+length = len(arr)
+j = 0
+while j < length - 1:
+    if (arr[j] > arr[j + 1]):
+        temp = arr[j]
+        arr[j] = arr[j + 1]
+        arr[j + 1] = temp
+        j = -1
+    j += 1
+print(arr)
